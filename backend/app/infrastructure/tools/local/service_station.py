@@ -1,6 +1,7 @@
 from infrastructure.database.database_pool import pool
 import json
-import stun
+import httpx
+import ipaddress
 from pymysql.cursors import DictCursor
 from agents import function_tool
 from infrastructure.tools.mcp.mcp_servers import baidu_mcp_client
@@ -31,22 +32,60 @@ def bd09mc_to_bd09(lng: float, lat: float) -> tuple[float, float]:
 
 def get_ip_via_stun():
     """
-        [辅助函数] 获取本机公网 IP
-        注意：在服务器部署时，这获取的是服务器机房 IP。
-        如果要获取终端用户 IP，建议使用 ContextVars 从 HTTP Header 中透传。
-        真正开发期间--->前端请求的时候携带过来---->FastAPI的request携带过来---注入到工具中，工具使用。
+        保留旧函数名以兼容历史调用，实际实现已切换到 HTTP 方式。
     """
 
-    try:
-        # 默认使用公用的 STUN 服务器
-        nat_type, external_ip, external_port = stun.get_ip_info()
-        return external_ip
-    except Exception as e:
-        print(f"STUN 获取失败: {e}")
-        return None
+    return get_ip_via_http()
 #  从昌平区温都水城到海淀区清华大学（起点明确）--->地址解析得到经纬度
 #  我准备去清华大学（起点模糊问题）---->ip找经纬度
 #  离我最近的服务站有哪些----？流程:1.先调用resolve_user_location_from_text工具（用户当前的经纬度）---->2.query_nearest_repair_shops_by_coords(用户当前的经纬度)---->最近的服务返回出来
+
+
+def get_ip_via_http():
+    """
+    使用 HTTP 出口 IP 查询接口获取当前公网 IP。
+    """
+    api_list = [
+        "https://4.ipw.cn",
+        "https://api.ipify.org",
+        "https://ifconfig.me/ip",
+    ]
+
+    for api_url in api_list:
+        try:
+            response = httpx.get(api_url, timeout=3.0, follow_redirects=True)
+            response.raise_for_status()
+            ip_address = response.text.strip()
+
+            if not ip_address:
+                continue
+
+            ipaddress.ip_address(ip_address)
+            return ip_address
+        except (httpx.HTTPError, ValueError) as e:
+            logger.warning(f"[Location] Failed to get public IP via {api_url}: {e}")
+
+    logger.warning("[Location] All HTTP public IP APIs failed.")
+    return None
+
+
+def _normalize_query_coords(lat: float, lng: float) -> tuple[float | None, float | None, str | None]:
+    """
+    Normalize and validate coordinates before the DB query runs.
+    """
+    try:
+        normalized_lat = float(lat)
+        normalized_lng = float(lng)
+    except (TypeError, ValueError):
+        return None, None, "Invalid coordinate type."
+
+    if not (-90 <= normalized_lat <= 90 and -180 <= normalized_lng <= 180):
+        return None, None, "Coordinate out of range."
+
+    if abs(normalized_lat) < 1e-6 and abs(normalized_lng) < 1e-6:
+        return None, None, "Placeholder coordinates (0.0, 0.0) are not allowed."
+
+    return normalized_lat, normalized_lng, None
 
 
 @function_tool
@@ -118,7 +157,7 @@ async def resolve_user_location_from_text(
             logger.warning(f"[Location] Geocode failed for '{user_input}': {e}")
 
     #  获取 IP (注意：此处目前是获取运行环境对外的公网IP，生产环境建议改为前端获取传参注入)
-    user_ip = get_ip_via_stun()
+    user_ip = get_ip_via_http()
 
     # 4. 尝试 IP 定位
     if user_ip and user_ip not in ("127.0.0.1", "localhost", "::1"):
@@ -193,6 +232,23 @@ def query_nearest_repair_shops_by_coords(lat: float, lng: float, limit: int = 3)
     connection = None
     cursor = None
     try:
+        raw_lat, raw_lng = lat, lng
+        lat, lng, coord_error = _normalize_query_coords(lat, lng)
+        if coord_error:
+            logger.warning(
+                f"[NearestShops] Rejected invalid query coordinates: lat={raw_lat}, lng={raw_lng}, reason={coord_error}"
+            )
+            return json.dumps({
+                "ok": False,
+                "error": (
+                    "Invalid start coordinates. Call resolve_user_location_from_text first, "
+                    "then retry query_nearest_repair_shops_by_coords with the returned lat/lng."
+                ),
+                "reason": coord_error,
+                "needs_location_resolution": True,
+                "query": {"lat": raw_lat, "lng": raw_lng, "limit": limit}
+            }, ensure_ascii=False)
+
         connection = pool.connection()
         cursor = connection.cursor(DictCursor)
 
@@ -317,7 +373,7 @@ def run_nearest_shops_tool():
     print("=" * 80)
 
     test_cases = [
-        ("杭州西湖", 30.251886125202528, 120.11785377783215)
+        # ("杭州西湖", 30.251886125202528, 120.11785377783215)
         # "附近",
         # "我的位置",
         # "当前位置",

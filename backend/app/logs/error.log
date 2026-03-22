@@ -10,3 +10,4 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2026-03-22 21:05:07,933 | ERROR    | ITS_App:63 | AgentService.process_query执行出错: Hosted tools are not supported with the ChatCompletions API. Got tool type: <class 'function'>, tool: <function consult_technical_expert at 0x0000029203EA5940>
 2026-03-22 21:05:29,873 | ERROR    | ITS_App:63 | AgentService.process_query执行出错: Hosted tools are not supported with the ChatCompletions API. Got tool type: <class 'function'>, tool: <function consult_technical_expert at 0x0000029203EA5940>
 2026-03-22 21:05:29,878 | ERROR    | ITS_App:63 | AgentService.process_query执行出错: Hosted tools are not supported with the ChatCompletions API. Got tool type: <class 'function'>, tool: <function consult_technical_expert at 0x0000029203EA5940>
+2026-03-22 22:44:33,928 | ERROR    | ITS_App:36 | 发送请求获取知识库服务下的知识库数据失败:All connection attempts failed
