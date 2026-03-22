@@ -1,7 +1,7 @@
 import asyncio
 import json
 from config.settings import settings
-from agents.mcp import MCPServerStreamableHttp
+from agents.mcp import MCPServerStreamableHttp, MCPServerSse
 from typing import Dict, Any
 
 # 1. 定义百炼的通用搜索MCP客户端
@@ -12,6 +12,18 @@ search_mcp_client = MCPServerStreamableHttp(
         "headers": {
             "Authorization": f"Bearer {settings.AL_BAILIAN_API_KEY}"
         },
+        "timeout": 60,  # 客户端和mcp服务端建立连接的最大时间（s）（小一些）
+        "sse_read_timeout": 60 * 30  # 客户端接收mcp服务端接收数据（数据包）的最大等待时间（大一些）
+    },
+    client_session_timeout_seconds=60 * 10,  # 客户端基于会话级别的超时时间
+    cache_tools_list=True,
+)
+
+# 2. 定义百度地图相关的MCP客户端(AK)
+baidu_mcp_client = MCPServerSse(
+    name="百度地图",
+    params={  # https://mcp.map.baidu.com/sse?ak=您的ak
+        "url": f"https://mcp.map.baidu.com/sse?ak={settings.BAIDUMAP_AK}",
         "timeout": 60,  # 客户端和mcp服务端建立连接的最大时间（s）（小一些）
         "sse_read_timeout": 60 * 30  # 客户端接收mcp服务端接收数据（数据包）的最大等待时间（大一些）
     },
@@ -125,24 +137,23 @@ async def test_baidu_map():
     #     }
     # )
 
-    # await run_mcp_call(
-    #     mcp_instance=baidu_map_mcp,
-    #     tool_name="map_uri",  # (拉起百度地图页面)
-    #     tool_args={
-    #         "service": "direction"
-    #     }
-    # )
+    await run_mcp_call(
+        mcp_instance=baidu_mcp_client,
+        tool_name="map_uri",  # (拉起百度地图页面)
+        tool_args={
+            "service": "direction"
+        }
+    )
 # ==============================================================================
 # 5. 主程序入口
 # ==============================================================================
 async def main():
-    # 你可以在这里注释掉不需要跑的测试
 
     # 任务 1
-    await test_bailian_search()
+    # await test_bailian_search()
 
     # 任务 2
-    # await test_baidu_map()
+    await test_baidu_map()
 
 
 if __name__ == '__main__':

@@ -1,19 +1,30 @@
-2026-03-21 16:40:59,498 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 16:43:10,521 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 16:50:24,020 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 16:56:35,725 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 17:13:29,155 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 17:16:35,632 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 17:16:45,355 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 17:18:23,689 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 17:18:42,721 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 17:20:28,278 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 17:28:38,299 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 17:42:27,241 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 17:44:31,064 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 17:47:23,337 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 20:13:04,669 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 20:13:43,542 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 20:38:10,943 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 20:39:00,798 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
-2026-03-21 20:39:51,976 | DEBUG    | ITS_App:31 | 成功加载提示词: technical_agent
+2026-03-22 11:41:59,670 | DEBUG    | ITS_App:31 | 成功加载提示词: comprehensive_service_agent
+2026-03-22 11:42:36,965 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 11:42:39,582 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 11:44:11,742 | DEBUG    | ITS_App:31 | 成功加载提示词: comprehensive_service_agent
+2026-03-22 11:44:47,337 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 11:50:13,439 | DEBUG    | ITS_App:31 | 成功加载提示词: comprehensive_service_agent
+2026-03-22 11:50:53,175 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 11:50:55,699 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 12:14:10,860 | DEBUG    | ITS_App:31 | 成功加载提示词: comprehensive_service_agent
+2026-03-22 12:14:47,553 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 12:14:50,012 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 13:32:08,696 | DEBUG    | ITS_App:31 | 成功加载提示词: comprehensive_service_agent
+2026-03-22 13:32:54,035 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 13:32:57,830 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 13:44:24,582 | DEBUG    | ITS_App:31 | 成功加载提示词: comprehensive_service_agent
+2026-03-22 13:48:18,647 | DEBUG    | ITS_App:31 | 成功加载提示词: comprehensive_service_agent
+2026-03-22 13:49:04,536 | INFO     | ITS_App:174 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 13:49:11,258 | INFO     | ITS_App:258 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 13:49:41,757 | DEBUG    | ITS_App:31 | 成功加载提示词: comprehensive_service_agent
+2026-03-22 13:50:12,481 | DEBUG    | ITS_App:125 | [Location] Trying IP location for: 117.162.112.68
+2026-03-22 13:50:14,318 | INFO     | ITS_App:154 | [Location] IP location success: 117.162.112.68 → (33.872029, -118.245801)
+2026-03-22 13:50:21,254 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (33.872028589385465, -118.24580061262462)
+2026-03-22 13:51:08,177 | DEBUG    | ITS_App:31 | 成功加载提示词: comprehensive_service_agent
+2026-03-22 13:51:29,142 | DEBUG    | ITS_App:125 | [Location] Trying IP location for: 117.162.112.68
+2026-03-22 13:51:29,431 | INFO     | ITS_App:154 | [Location] IP location success: 117.162.112.68 → (28.275237, 117.974394)
+2026-03-22 13:51:32,600 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (28.275237281092302, 117.97439350685255)
+2026-03-22 13:52:33,045 | DEBUG    | ITS_App:31 | 成功加载提示词: comprehensive_service_agent
+2026-03-22 13:52:53,619 | DEBUG    | ITS_App:125 | [Location] Trying IP location for: 117.162.112.68
+2026-03-22 13:52:53,903 | INFO     | ITS_App:154 | [Location] IP location success: 117.162.112.68 → (28.275237, 117.974394)
+2026-03-22 13:52:57,656 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (28.275237281092302, 117.97439350685255)
