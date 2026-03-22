@@ -1,7 +1,7 @@
 import asyncio
 import json
 from config.settings import settings
-from agents.mcp import MCPServerStreamableHttp, MCPServerSse
+from agents.mcp import MCPServerStreamableHttp
 from typing import Dict, Any
 
 # 1. 定义百炼的通用搜索MCP客户端
@@ -20,10 +20,10 @@ search_mcp_client = MCPServerStreamableHttp(
 )
 
 # 2. 定义百度地图相关的MCP客户端(AK)
-baidu_mcp_client = MCPServerSse(
+baidu_mcp_client = MCPServerStreamableHttp(
     name="百度地图",
     params={  # https://mcp.map.baidu.com/sse?ak=您的ak
-        "url": f"https://mcp.map.baidu.com/sse?ak={settings.BAIDUMAP_AK}",
+        "url": f"https://mcp.map.baidu.com/mcp?ak={settings.BAIDUMAP_AK}",
         "timeout": 60,  # 客户端和mcp服务端建立连接的最大时间（s）（小一些）
         "sse_read_timeout": 60 * 30  # 客户端接收mcp服务端接收数据（数据包）的最大等待时间（大一些）
     },
@@ -122,7 +122,7 @@ async def test_baidu_map():
     测试百度地图 (使用全局 baidu_mcp)
     """
     # await run_mcp_call(
-    #     mcp_instance=baidu_map_mcp,
+    #     mcp_instance=baidu_mcp_client,
     #     tool_name="map_geocode",  # (地理位置编码)
     #     tool_args={
     #         "address": "北京市昌平区",
@@ -130,7 +130,7 @@ async def test_baidu_map():
     # )
 
     # await run_mcp_call(
-    #     mcp_instance=baidu_map_mcp,
+    #     mcp_instance=baidu_mcp_client,
     #     tool_name="map_ip_location",  # (根据ip获取经纬度)
     #     tool_args={
     #         "ip": "123.120.109.232",

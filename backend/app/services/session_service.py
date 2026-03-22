@@ -216,9 +216,16 @@ class SessionService:
 # 全局单例
 session_service = SessionService()
 
-if __name__ == '__main__':
-    result1 = session_service.prepare_history("hzk", "666")
-    result1.append({"role": "user", "content": "你好!"})  # 用户输入问题
-    result1.append({"role": "assistant", "content": "您好，请问有什么可以帮助您嘛"})  # Agent的输出（final_output）
+# if __name__ == '__main__':
+#     result1 = session_service.prepare_history("xiaoming", "666")
+#     result1.append({"role": "user", "content": "你好!"})  # 用户输入问题
+#     result1.append({"role": "assistant", "content": "您好，请问有什么可以帮助您嘛"})  # Agent的输出（final_output）
 
-    session_service.save_history("hzk", "666", result1)
+#     session_service.save_history("hzk", "666", result1)
+
+
+if __name__ == '__main__':
+    result1 = session_service.prepare_history("xiaoming", "666", "你好!")
+    result1.append({"role": "assistant", "content": "您好，请问有什么可以帮助您？"})
+
+    session_service.save_history("xiaoming", "666", result1)

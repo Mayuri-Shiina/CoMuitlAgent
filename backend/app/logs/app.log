@@ -15,3 +15,231 @@
 2026-03-22 13:51:32,600 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (28.275237281092302, 117.97439350685255)
 2026-03-22 13:52:53,903 | INFO     | ITS_App:154 | [Location] IP location success: 117.162.112.68 → (28.275237, 117.974394)
 2026-03-22 13:52:57,656 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (28.275237281092302, 117.97439350685255)
+2026-03-22 15:38:54,959 | INFO     | ITS_App:12 | [Route] transfer to technical expert: test tech...
+2026-03-22 15:38:54,959 | INFO     | ITS_App:36 | [Route] transfer to service expert: test service...
+2026-03-22 15:40:15,920 | INFO     | ITS_App:36 | [Route] transfer to service expert: 怎么去颐和园...
+2026-03-22 15:41:03,721 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 15:47:46,865 | INFO     | ITS_App:12 | [Route] 转交技术专家: test...
+2026-03-22 15:47:46,866 | INFO     | ITS_App:36 | [Route] 转交业务专家: test...
+2026-03-22 15:49:35,356 | INFO     | ITS_App:12 | [Route] 转交技术专家: 今天小米股价多少...
+2026-03-22 15:50:00,675 | INFO     | ITS_App:12 | [Route] 转交技术专家: 如何用U盘安装Windows 7...
+2026-03-22 15:50:34,589 | ERROR    | ITS_App:36 | 发送请求获取知识库服务下的知识库数据失败:Server error '500 Internal Server Error' for url 'http://127.0.0.1:8001/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2026-03-22 15:51:15,754 | INFO     | ITS_App:36 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 15:52:02,448 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 15:52:09,048 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 15:59:52,826 | INFO     | ITS_App:12 | [Route] 转交技术专家: 今天小米股价多少...
+2026-03-22 16:00:00,926 | INFO     | ITS_App:12 | [Route] 转交技术专家: 如何用U盘安装Windows 7...
+2026-03-22 16:00:46,896 | INFO     | ITS_App:12 | [Route] 转交技术专家: 今天小米股价多少...
+2026-03-22 16:00:57,514 | INFO     | ITS_App:36 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 16:01:34,768 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 16:01:40,787 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 16:07:25,829 | INFO     | ITS_App:56 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 16:08:04,116 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 16:08:09,089 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 16:10:02,458 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 16:10:07,243 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 16:10:33,634 | INFO     | ITS_App:56 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 16:11:04,133 | INFO     | ITS_App:154 | [Location] IP location success: 117.162.112.68 → (28.275237, 117.974394)
+2026-03-22 16:11:09,337 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (28.275237281092302, 117.97439350685255)
+2026-03-22 16:13:36,743 | INFO     | ITS_App:56 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 16:14:14,087 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 16:14:16,083 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 16:27:33,339 | INFO     | ITS_App:64 | [Route] 转交业务专家: test...
+2026-03-22 16:28:44,695 | INFO     | ITS_App:56 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 16:29:30,113 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 16:29:41,269 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 16:33:28,120 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 16:33:35,612 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 16:34:08,826 | INFO     | ITS_App:154 | [Location] IP location success: 117.162.112.68 → (28.275237, 117.974394)
+2026-03-22 16:34:11,901 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (28.275237281092302, 117.97439350685255)
+2026-03-22 16:47:41,839 | INFO     | ITS_App:56 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 16:48:18,045 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 16:48:21,460 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 16:54:23,764 | INFO     | ITS_App:27 | [Route] 转交技术专家: 今天小米股价多少...
+2026-03-22 17:02:46,475 | INFO     | ITS_App:27 | [Route] 转交技术专家: 如何用U盘安装Windows 7...
+2026-03-22 17:03:03,347 | ERROR    | ITS_App:36 | 发送请求获取知识库服务下的知识库数据失败:Server error '500 Internal Server Error' for url 'http://127.0.0.1:8001/query'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+2026-03-22 17:03:18,557 | INFO     | ITS_App:27 | [Route] 转交技术专家: 如何用U盘安装Windows 7...
+2026-03-22 17:07:48,393 | INFO     | ITS_App:56 | [Route] 转交业务专家: 怎么去颐和园...
+2026-03-22 17:08:26,307 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 17:23:14,685 | INFO     | ITS_App:56 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 17:23:28,353 | INFO     | ITS_App:56 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 17:24:03,292 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 17:24:06,136 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 17:26:39,458 | INFO     | ITS_App:56 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 17:27:19,951 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 17:27:22,975 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 17:42:50,047 | INFO     | ITS_App:56 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 17:43:36,152 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 17:47:48,308 | INFO     | ITS_App:56 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 17:48:27,708 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 17:50:21,973 | INFO     | ITS_App:56 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 17:50:30,229 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 17:57:37,860 | INFO     | ITS_App:56 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 17:58:18,228 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 17:58:25,069 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 18:17:00,334 | INFO     | ITS_App:56 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 18:17:41,641 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 18:17:47,484 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 18:18:04,844 | INFO     | ITS_App:56 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 18:18:39,699 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 18:18:45,928 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 18:37:49,896 | INFO     | ITS_App:56 | [Route] 转交业务专家: 我想去小米之家修电脑...
+2026-03-22 18:38:30,950 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 18:38:33,425 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 18:48:55,471 | INFO     | ITS_App:27 | [Route] 转交技术专家: 今天AI圈发生了些什么事儿...
+2026-03-22 18:51:43,390 | INFO     | ITS_App:27 | [Route] 转交技术专家: 今天天气怎么样...
+2026-03-22 18:51:51,374 | INFO     | ITS_App:27 | [Route] 转交技术专家: 最近电脑总是不能开机，怎么解决...
+2026-03-22 18:53:09,404 | INFO     | ITS_App:56 | [Route] 转交业务专家: 帮我找个最近的维修站...
+2026-03-22 18:53:44,059 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 18:53:47,774 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 18:54:28,011 | INFO     | ITS_App:56 | [Route] 转交业务专家: 天安门广场附近的商场...
+2026-03-22 18:54:31,084 | INFO     | ITS_App:106 | [Location] Geocode success: '天安门广场' → (39.9096519665138, 116.4041774131041)
+2026-03-22 18:55:51,097 | INFO     | ITS_App:56 | [Route] 转交业务专家: 杭州西湖附近都有哪些商场...
+2026-03-22 18:55:53,762 | INFO     | ITS_App:106 | [Location] Geocode success: '杭州西湖' → (30.265916325588922, 120.13643801205312)
+2026-03-22 18:58:27,047 | INFO     | ITS_App:27 | [Route] 转交技术专家: 电脑无法开机怎么办...
+2026-03-22 18:58:27,050 | INFO     | ITS_App:56 | [Route] 转交业务专家: 导航去清华大学，拍夜景...
+2026-03-22 19:01:37,525 | INFO     | ITS_App:56 | [Route] 转交业务专家: 导航去欢乐谷...
+2026-03-22 19:01:37,526 | INFO     | ITS_App:27 | [Route] 转交技术专家: 今天欢乐谷闭园时间是几点？...
+2026-03-22 19:02:14,158 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 19:11:38,017 | INFO     | ITS_App:106 | [Location] Geocode success: '昌平区回龙观' → (40.07043354991036, 116.33111032088908)
+2026-03-22 19:11:38,019 | INFO     | ITS_App:86 | [Location] Detected relative term '附近', forcing IP location fallback.
+2026-03-22 19:12:11,747 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 19:12:44,163 | INFO     | ITS_App:168 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 19:12:44,171 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 19:12:44,174 | INFO     | ITS_App:250 | [NearestShops] Found 3 shops near (40.07043354991036, 116.33111032088908)
+2026-03-22 19:16:46,512 | INFO     | ITS_App:107 | [Location] Geocode success: '杭州西湖' → (30.265916325588922, 120.13643801205312)
+2026-03-22 19:17:23,894 | INFO     | ITS_App:107 | [Location] Geocode success: '杭州西湖附近' → (30.251886125202528, 120.11785377783215)
+2026-03-22 19:19:25,029 | INFO     | ITS_App:251 | [NearestShops] Found 3 shops near (40.07043354991036, 116.33111032088908)
+2026-03-22 19:28:31,777 | INFO     | ITS_App:251 | [NearestShops] Found 3 shops near (30.251886125202528, 120.11785377783215)
+2026-03-22 19:34:58,423 | INFO     | ITS_App:107 | [Location] Geocode success: '杭州西湖' → (30.265916325588922, 120.13643801205312)
+2026-03-22 19:35:19,348 | INFO     | ITS_App:107 | [Location] Geocode success: '广州塔' → (23.112047190324763, 113.33107523708054)
+2026-03-22 19:35:30,628 | INFO     | ITS_App:107 | [Location] Geocode success: '昌平区回龙观' → (40.07043354991036, 116.33111032088908)
+2026-03-22 19:35:39,221 | INFO     | ITS_App:107 | [Location] Geocode success: '昌平区回龙观' → (40.07043354991036, 116.33111032088908)
+2026-03-22 19:35:39,222 | INFO     | ITS_App:87 | [Location] Detected relative term '附近', forcing IP location fallback.
+2026-03-22 19:36:18,953 | INFO     | ITS_App:169 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 19:38:09,124 | INFO     | ITS_App:87 | [Location] Detected relative term '附近', forcing IP location fallback.
+2026-03-22 19:38:41,780 | INFO     | ITS_App:169 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 19:46:46,045 | INFO     | ITS_App:87 | [Location] Detected relative term '附近', forcing IP location fallback.
+2026-03-22 19:47:19,698 | INFO     | ITS_App:169 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 20:59:03,681 | INFO     | ITS_App:19 | 应用启动，建立MCP连接...
+2026-03-22 20:59:04,884 | INFO     | ITS_App:22 | MCP连接建立完成
+2026-03-22 21:00:31,720 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:00:31,720 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:00:31,721 | WARNING  | ITS_App:93 | 用户目录不存在: root1
+2026-03-22 21:00:33,400 | INFO     | ITS_App:31 | 用户 root1 发送的待处理任务 你好
+2026-03-22 21:00:33,409 | ERROR    | ITS_App:63 | AgentService.process_query执行出错: Hosted tools are not supported with the ChatCompletions API. Got tool type: <class 'function'>, tool: <function consult_technical_expert at 0x0000029203EA5940>
+2026-03-22 21:00:33,420 | ERROR    | ITS_App:63 | AgentService.process_query执行出错: Hosted tools are not supported with the ChatCompletions API. Got tool type: <class 'function'>, tool: <function consult_technical_expert at 0x0000029203EA5940>
+2026-03-22 21:00:33,437 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:00:33,437 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:00:33,439 | WARNING  | ITS_App:93 | 用户目录不存在: root1
+2026-03-22 21:04:55,032 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:04:55,033 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:04:55,034 | WARNING  | ITS_App:93 | 用户目录不存在: root1
+2026-03-22 21:04:58,782 | INFO     | ITS_App:31 | 用户 root1 发送的待处理任务 你好
+2026-03-22 21:04:58,786 | ERROR    | ITS_App:63 | AgentService.process_query执行出错: Hosted tools are not supported with the ChatCompletions API. Got tool type: <class 'function'>, tool: <function consult_technical_expert at 0x0000029203EA5940>
+2026-03-22 21:04:58,790 | ERROR    | ITS_App:63 | AgentService.process_query执行出错: Hosted tools are not supported with the ChatCompletions API. Got tool type: <class 'function'>, tool: <function consult_technical_expert at 0x0000029203EA5940>
+2026-03-22 21:04:58,815 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:04:58,816 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:04:58,816 | WARNING  | ITS_App:93 | 用户目录不存在: root1
+2026-03-22 21:05:04,259 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:05:04,259 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:05:04,260 | WARNING  | ITS_App:93 | 用户目录不存在: root1
+2026-03-22 21:05:07,923 | INFO     | ITS_App:31 | 用户 root1 发送的待处理任务 你好
+2026-03-22 21:05:07,927 | ERROR    | ITS_App:63 | AgentService.process_query执行出错: Hosted tools are not supported with the ChatCompletions API. Got tool type: <class 'function'>, tool: <function consult_technical_expert at 0x0000029203EA5940>
+2026-03-22 21:05:07,933 | ERROR    | ITS_App:63 | AgentService.process_query执行出错: Hosted tools are not supported with the ChatCompletions API. Got tool type: <class 'function'>, tool: <function consult_technical_expert at 0x0000029203EA5940>
+2026-03-22 21:05:07,963 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:05:07,964 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:05:07,964 | WARNING  | ITS_App:93 | 用户目录不存在: root1
+2026-03-22 21:05:23,296 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:05:23,296 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:05:23,296 | WARNING  | ITS_App:93 | 用户目录不存在: root1
+2026-03-22 21:05:29,869 | INFO     | ITS_App:31 | 用户 root1 发送的待处理任务 你好
+2026-03-22 21:05:29,873 | ERROR    | ITS_App:63 | AgentService.process_query执行出错: Hosted tools are not supported with the ChatCompletions API. Got tool type: <class 'function'>, tool: <function consult_technical_expert at 0x0000029203EA5940>
+2026-03-22 21:05:29,878 | ERROR    | ITS_App:63 | AgentService.process_query执行出错: Hosted tools are not supported with the ChatCompletions API. Got tool type: <class 'function'>, tool: <function consult_technical_expert at 0x0000029203EA5940>
+2026-03-22 21:05:29,907 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:05:29,907 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:05:29,909 | WARNING  | ITS_App:93 | 用户目录不存在: root1
+2026-03-22 21:07:04,594 | INFO     | ITS_App:29 | 应用关闭，清理MCP连接...
+2026-03-22 21:07:04,594 | INFO     | ITS_App:32 | MCP连接清理完成
+2026-03-22 21:07:04,597 | INFO     | ITS_App:63 | 2.启动Web服务器成功...
+2026-03-22 21:07:10,821 | INFO     | ITS_App:19 | 应用启动，建立MCP连接...
+2026-03-22 21:07:12,037 | INFO     | ITS_App:22 | MCP连接建立完成
+2026-03-22 21:07:16,569 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:07:16,569 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:07:16,573 | WARNING  | ITS_App:93 | 用户目录不存在: root1
+2026-03-22 21:07:20,140 | INFO     | ITS_App:31 | 用户 root1 发送的待处理任务 你好
+2026-03-22 21:07:22,450 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:07:22,450 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:11:35,587 | INFO     | ITS_App:31 | 用户 root1 发送的待处理任务 今天有哪些新闻
+2026-03-22 21:11:36,642 | INFO     | ITS_App:27 | [Route] 转交技术专家: 今天有哪些新闻...
+2026-03-22 21:11:54,685 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:11:54,686 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:12:18,104 | INFO     | ITS_App:31 | 用户 root1 发送的待处理任务 从南昌站导航到北京天安门
+2026-03-22 21:12:19,284 | INFO     | ITS_App:56 | [Route] 转交业务专家: 从南昌站导航到北京天安门...
+2026-03-22 21:12:22,740 | INFO     | ITS_App:107 | [Location] Geocode success: '南昌站' → (28.669141997477514, 115.92658482927011)
+2026-03-22 21:12:35,724 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:12:35,724 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:12:48,277 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:12:48,277 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:12:52,845 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:12:52,847 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:13:16,755 | INFO     | ITS_App:31 | 用户 root1 发送的待处理任务 导航到最近的服务站
+2026-03-22 21:13:17,935 | INFO     | ITS_App:56 | [Route] 转交业务专家: 最近的服务站...
+2026-03-22 21:14:02,808 | INFO     | ITS_App:169 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 21:14:02,861 | INFO     | ITS_App:251 | [NearestShops] Found 3 shops near (0.0, 0.0)
+2026-03-22 21:14:25,950 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:14:25,954 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:14:58,374 | INFO     | ITS_App:31 | 用户 root1 发送的待处理任务 查看江西最近的服务区
+2026-03-22 21:14:59,592 | INFO     | ITS_App:56 | [Route] 转交业务专家: 江西最近的服务区...
+2026-03-22 21:15:44,366 | INFO     | ITS_App:169 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 21:16:16,417 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:16:16,418 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:16:24,806 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:16:24,806 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:17:19,650 | INFO     | ITS_App:31 | 用户 root1 发送的待处理任务 我们刚刚聊了什么
+2026-03-22 21:17:26,415 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:17:26,417 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:19:09,233 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:19:09,234 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:19:20,225 | INFO     | ITS_App:31 | 用户 root1 发送的待处理任务 我的电脑黑屏了怎么办
+2026-03-22 21:19:21,409 | INFO     | ITS_App:27 | [Route] 转交技术专家: 我的电脑黑屏了怎么办...
+2026-03-22 21:20:08,419 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:20:08,419 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:21:13,510 | INFO     | ITS_App:31 | 用户 root1 发送的待处理任务 电脑无法开机，问完这个，请你帮我导航去清华大学，我想去拍夜景
+2026-03-22 21:21:15,193 | INFO     | ITS_App:27 | [Route] 转交技术专家: 电脑无法开机...
+2026-03-22 21:21:15,194 | INFO     | ITS_App:56 | [Route] 转交业务专家: 导航去清华大学...
+2026-03-22 21:22:15,905 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:22:15,905 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:23:21,529 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:23:21,530 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:24:24,695 | INFO     | ITS_App:31 | 用户 root1 发送的待处理任务 你并没有告诉我电脑无法开机怎么解决
+2026-03-22 21:24:26,161 | INFO     | ITS_App:27 | [Route] 转交技术专家: 电脑无法开机，完全无反应（无风扇声、无指示灯、屏幕黑屏）...
+2026-03-22 21:24:51,084 | INFO     | ITS_App:56 | [Route] 转交业务专家: 导航去清华大学...
+2026-03-22 21:24:55,395 | INFO     | ITS_App:56 | 接收到获取用户会话请求
+2026-03-22 21:24:55,397 | INFO     | ITS_App:60 | 获取用户 root1 的所有会话记忆数据
+2026-03-22 21:35:54,205 | INFO     | ITS_App:27 | [Route] 转交技术专家: 今天天气怎么样，电脑总是不能开机怎么解决...
+2026-03-22 21:36:40,615 | INFO     | ITS_App:56 | [Route] 转交业务专家: 最近的电脑维修点...
+2026-03-22 21:37:16,090 | INFO     | ITS_App:169 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 21:37:17,977 | INFO     | ITS_App:251 | [NearestShops] Found 3 shops near (39.9042, 116.4074)
+2026-03-22 21:38:36,108 | INFO     | ITS_App:56 | [Route] 转交业务专家: 导航到离南昌最近的小米之家...
+2026-03-22 21:38:38,834 | INFO     | ITS_App:251 | [NearestShops] Found 3 shops near (28.676492, 115.89215)
+2026-03-22 21:38:38,970 | INFO     | ITS_App:107 | [Location] Geocode success: '南昌' → (28.551604186108275, 115.95046017276752)
+2026-03-22 21:38:53,492 | INFO     | ITS_App:56 | [Route] 转交业务专家: 南昌小米之家附近的商场...
+2026-03-22 21:40:47,143 | INFO     | ITS_App:56 | [Route] 转交业务专家: 杭州西湖附近的健身房...
+2026-03-22 21:40:47,144 | INFO     | ITS_App:56 | [Route] 转交业务专家: 杭州西湖附近维修电脑的维修站...
+2026-03-22 21:40:49,853 | INFO     | ITS_App:107 | [Location] Geocode success: '杭州西湖' → (30.265916325588922, 120.13643801205312)
+2026-03-22 21:40:52,088 | INFO     | ITS_App:251 | [NearestShops] Found 3 shops near (30.265916325588922, 120.13643801205312)
+2026-03-22 21:41:47,570 | INFO     | ITS_App:56 | [Route] 转交业务专家: 杭州西湖附近的商场...
+2026-03-22 21:41:49,733 | INFO     | ITS_App:27 | [Route] 转交技术专家: 杭州西湖附近有哪些商场...
+2026-03-22 21:42:39,216 | INFO     | ITS_App:27 | [Route] 转交技术专家: 今天故宫博物院门票售罄情况...
+2026-03-22 21:42:39,217 | INFO     | ITS_App:56 | [Route] 转交业务专家: 导航去故宫博物院，从南昌出发...
+2026-03-22 21:51:30,231 | INFO     | ITS_App:56 | [Route] 转交业务专家: 杭州西湖附近的健身房...
+2026-03-22 21:51:30,234 | INFO     | ITS_App:56 | [Route] 转交业务专家: 杭州西湖附近维修电脑的维修站...
+2026-03-22 21:52:10,431 | INFO     | ITS_App:169 | [Location] Using fallback coordinates (Beijing)
+2026-03-22 21:52:18,226 | INFO     | ITS_App:251 | [NearestShops] Found 3 shops near (30.265916, 120.136438)
+2026-03-22 21:52:32,055 | INFO     | ITS_App:56 | [Route] 转交业务专家: 杭州西湖附近的健身房...
+2026-03-22 21:52:32,055 | INFO     | ITS_App:56 | [Route] 转交业务专家: 杭州西湖附近维修电脑的维修站...
+2026-03-22 21:52:34,487 | INFO     | ITS_App:107 | [Location] Geocode success: '杭州西湖' → (30.265916325588922, 120.13643801205312)
+2026-03-22 21:52:36,725 | INFO     | ITS_App:251 | [NearestShops] Found 3 shops near (30.265916325588922, 120.13643801205312)

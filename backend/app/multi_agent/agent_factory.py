@@ -78,7 +78,7 @@ async def run_technical_tool():
     print("=" * 80)
     await search_mcp_client.connect()
 
-    test_cases = ["今天小米股价多少"]
+    test_cases = ["如何用U盘安装Windows 7"]
 
     for query in test_cases:
         print(f"\n 查询: {query}")
@@ -98,8 +98,8 @@ async def run_service_tool():
     await baidu_mcp_client.connect()
 
     test_cases = [
-        # "我想去小米之家修电脑",
-        "怎么去颐和园",
+        "我想去小米之家修电脑",
+        # "怎么去颐和园",
     ]
 
     for query in test_cases:
@@ -117,7 +117,7 @@ async def main():
 
     # 2. 测试全能业务智能体工具
     await run_service_tool()
-    # print("\n所有测试完成！\n")
+    print("\n所有测试完成！\n")
 
 
 # 以下是测试代码，可以独立运行测试每个Agent Tool

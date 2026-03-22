@@ -48,6 +48,7 @@ def get_ip_via_stun():
 #  我准备去清华大学（起点模糊问题）---->ip找经纬度
 #  离我最近的服务站有哪些----？流程:1.先调用resolve_user_location_from_text工具（用户当前的经纬度）---->2.query_nearest_repair_shops_by_coords(用户当前的经纬度)---->最近的服务返回出来
 
+
 @function_tool
 async def resolve_user_location_from_text(
         user_input: str,
@@ -162,8 +163,8 @@ async def resolve_user_location_from_text(
         except Exception as e:
             logger.warning(f"[Location] IP location failed for {user_ip}: {e}")
 
-    #  5. 兜底
-    # 防止整个流程失败导致 Agent 崩溃，返回一个默认坐标（通常是北京天安门）
+    # #  5. 兜底
+    # # 防止整个流程失败导致 Agent 崩溃，返回一个默认坐标（通常是北京天安门）
     fallback_lat, fallback_lng = 39.9042, 116.4074
     logger.info("[Location] Using fallback coordinates (Beijing)")
 
@@ -273,3 +274,112 @@ def query_nearest_repair_shops_by_coords(lat: float, lng: float, limit: int = 3)
             cursor.close()
         if connection:
             connection.close()
+
+
+# ==================================测试===========================================
+
+async def run_resolve_location_tool():
+    """测试位置解析工具（MCP：map_geocode / map_ip_location）"""
+    print("\n" + "=" * 80)
+    print("测试位置解析 Tool")
+    print("=" * 80)
+
+    await baidu_mcp_client.connect()
+
+    test_cases = [
+        # ("明确地名 -> Geocode", "杭州西湖"),
+        # ("相对位置词 -> IP定位", "杭州西湖附近"),
+        # ("空字符串 -> IP定位", ""),
+    ]
+
+    try:
+        for case_name, user_input in test_cases:
+            print(f"\n用例: {case_name}")
+            print(f"输入: {repr(user_input)}")
+            print("-" * 80)
+
+            result = await resolve_user_location_from_text(user_input=user_input)
+
+            try:
+                parsed = json.loads(result)
+                print(json.dumps(parsed, ensure_ascii=False, indent=2))
+            except Exception:
+                print(result)
+
+    finally:
+        await baidu_mcp_client.cleanup()
+
+
+def run_nearest_shops_tool():
+    """测试最近维修站查询工具（本地DB）"""
+    print("\n" + "=" * 80)
+    print("测试最近维修站查询 Tool")
+    print("=" * 80)
+
+    test_cases = [
+        ("杭州西湖", 30.251886125202528, 120.11785377783215)
+        # "附近",
+        # "我的位置",
+        # "当前位置",
+        # "我想去清华大学",
+        # "从昌平区回龙观出发",
+    ]
+
+    for case_name, lat, lng in test_cases:
+        print(f"\n用例: {case_name}")
+        print(f"坐标: lat={lat}, lng={lng}")
+        print("-" * 80)
+
+        result = query_nearest_repair_shops_by_coords(lat=lat, lng=lng, limit=3)
+
+        try:
+            parsed = json.loads(result)
+            print(json.dumps(parsed, ensure_ascii=False, indent=2, default=str))
+        except Exception:
+            print(result)
+
+
+async def main():
+    print("\n" + "=" * 80)
+    print("测试 resolve_user_location_from_text")
+    print("=" * 80)
+
+    await baidu_mcp_client.connect()
+
+    test_cases = [
+        # "昌平区回龙观",
+        # "杭州西湖",
+        # "广州塔",
+        "附近",
+        # "我的位置",
+        # "当前位置",
+    ]
+
+    try:
+        for query in test_cases:
+            print(f"\n查询: {query}")
+            print("-" * 80)
+
+            result = await resolve_user_location_from_text(user_input=query)
+
+            try:
+                parsed = json.loads(result)
+                print(json.dumps(parsed, ensure_ascii=False, indent=2))
+
+                if "lat" in parsed and "lng" in parsed:
+                    print(f"提取到坐标: lat={parsed['lat']}, lng={parsed['lng']}")
+                else:
+                    print("未提取到经纬度")
+            except Exception:
+                print(result)
+
+    finally:
+        await baidu_mcp_client.cleanup()
+
+    print("\n所有测试完成！\n")
+
+
+if __name__ == "__main__":
+    import asyncio
+    asyncio.run(main())
+
